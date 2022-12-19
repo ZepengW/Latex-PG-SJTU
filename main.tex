@@ -70,13 +70,19 @@
 
 
 
-
+\newif \ifreview
+%\reviewtrue     %开启盲审模式，反之注释掉
+\reviewfalse    %关闭盲审模式
 
 \begin{document}
 
 
 \input{sec/0.0-front.tex}
+
+\ifreview
+\else
 \input{sec/0.1-statement.tex}
+\fi
 
 \pagenumbering{Roman}
 \fancyhead[LH]{上海交通大学学位论文}
@@ -101,9 +107,16 @@
 
 \input{sec/-1.1-appendix.tex}
 
+\ifreview
+\input{sec/-1.2-ouput-review.tex}
+\else
 \input{sec/-1.2-ouput.tex}
+\fi
 
+\ifreview
+\else
 \input{sec/-1.3-thanks.tex}
+\fi
 
 
 

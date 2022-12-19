@@ -21,9 +21,15 @@
 \begin{center}
 \heiti \zihao{4}
 \begin{tabular}{l}
-\textbf{姓\quad  名：}\\
-\textbf{学\quad  号：}\\
-\textbf{导\quad  师：}\\
+\ifreview
+\textbf{姓\quad  名：}\\    %不要填写
+\textbf{学\quad  号：}\\    %不要填写
+\textbf{导\quad  师：}\\    %不要填写
+\else
+\textbf{姓\quad  名：}XXXXXXX\\
+\textbf{学\quad  号：}XXXXXXX\\
+\textbf{导\quad  师：}XXXXXXX\\
+\fi
 \textbf{学\quad  院： }\\
 \textbf{学科/专业名称：}\\
 \textbf{申请学位层次：}\\
@@ -55,8 +61,13 @@ SHANGHAI JIAO TONG UNIVERSITY}
 ~\\
 \begin{center}
 \zihao{3} 
-Author:  \\
-Supervisor:  
+\ifreview
+Author:  \\   %不要填写
+Supervisor:    %不要填写
+\else
+Author:  XXXXXXX\\
+Supervisor:   XXXXXXX
+\fi
 \end{center}
 ~\\
 ~\\

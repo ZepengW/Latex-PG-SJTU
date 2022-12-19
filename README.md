@@ -4,8 +4,8 @@
 ## 改动
 - [x] 结构化文档，并修复原文档中显示问题，如声明页中的矩形框丢失、部分文字丢失等问题。
 - [x] 使用bibtex管理参考文献
-- [ ] 图标中英双标题问题，以及不同章节图子序号连续问题，如：图1-1，图1-2，图2-3
-- [ ] 盲审版本编译
+- [x] 图标中英双标题问题，以及不同章节图子序号连续问题，如：图1-1，图1-2，图2-3
+- [x] 盲审版本编译：去除作者名/学号/导师，声明页，致谢，使用盲审版本成果页
 
 ## 测试环境
 > 注：使用XeTex 编译
@@ -14,7 +14,7 @@
 
 - [ ] LatexSJTU
 
-- [x] MacOS (Vscode + MacTex)， 编译pipeline: xelatex -> biber -> xelatex -> xelatex
+- [x] MacOS (Vscode + MacTex)， 编译pipeline: xelatex -> **biber** -> xelatex -> xelatex
 <details>
 <summary>vscode 配置文件</summary>
 
