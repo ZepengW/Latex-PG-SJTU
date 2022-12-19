@@ -1,5 +1,5 @@
 \documentclass[UTF8,a4paper,12pt]{ctexart}
-\usepackage{ctex}
+%\usepackage{ctex}
 \usepackage{amsmath}
 \numberwithin{equation}{section}
 \allowdisplaybreaks[4]       %多行公式中换页
@@ -15,6 +15,13 @@
 \usepackage{times}
 \usepackage{mathptmx}
 \usepackage{fancyhdr} %页眉页脚
+\usepackage[backend=biber, style=gb7714-2015]{biblatex}
+% 文献表条目间的间距
+\setlength{\bibitemsep}{0pt}
+% 导入参考文献数据库
+\addbibresource{main.bib}
+
+
 \pagestyle{fancy}
 \fancyhf{}
 \fancyfoot[C]{\thepage}
@@ -43,10 +50,18 @@
 \vskip-2\headrulewidth\vskip-1pt}      %两条线的距离1pt
   \vspace{6mm}}     %双线与下面正文之间的垂直间距
 \makeatother
-\CTEXsetup[format={\heiti \zihao{3} \bfseries \center}]{section}
-\CTEXsetup[number={第\chinese{section}章}]{section} 
+% \CTEXsetup[format={\heiti \zihao{3} \bfseries \center}]{section}
+% \CTEXsetup[number={第\chinese{section}章}]{section} 
+\ctexset{section={
+  format={\heiti \zihao{3} \bfseries \center},
+  number={第\chinese{section}章}
+}}
 \usepackage[explicit]{titlesec}
 \titlespacing*{\section}{0pt}{24pt plus .24pt minus .24pt}{18pt plus .0ex}
+
+
+
+
 
 \begin{document}
 
