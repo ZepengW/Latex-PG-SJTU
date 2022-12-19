@@ -4,7 +4,7 @@
 ## 改动
 - [x] 结构化文档，并修复原文档中显示问题，如声明页中的矩形框丢失、部分文字丢失等问题。
 - [x] 使用bibtex管理参考文献
-- [ ] 不同章节图子序号连续问题，如：图1-1，图1-2，图2-3
+- [ ] 图标中英双标题问题，以及不同章节图子序号连续问题，如：图1-1，图1-2，图2-3
 - [ ] 盲审版本编译
 
 ## 测试环境
@@ -17,6 +17,7 @@
 - [x] MacOS (Vscode + MacTex)， 编译pipeline: xelatex -> biber -> xelatex -> xelatex
 <details>
 <summary>vscode 配置文件</summary>
+
 ```
 "latex-workshop.latex.tools": [
         {
@@ -118,6 +119,8 @@
 
 
 ## 致谢
-感谢[SJTUThesis](https://github.com/sjtug/SJTUThesis)开源项目的贡献者们，从个人观感而言，该项目的latex模板无论是从美观、规范、便于上手等角度都是一个很优秀的模板。作为一个latex用户（latex开发小白），很多改动都是从该项目中获得了 学习和启发。
+非常感谢[SJTUThesis](https://github.com/sjtug/SJTUThesis)的开发者们，作为一个纯latex用户（即latex开发小白），本项目中的很多改动都是从该项目中得到参考和借鉴。
 
-但是鉴于研究生院于21年推出了官方的模板（一堆问题），与SJTUThesis略有差异，而作为一名latex小白，直接在SJTUThesis项目基础上改动为和官方一样效果对我来说有点力不从心。故本项目基于[研究生学位论文写作模版](https://www.gs.sjtu.edu.cn/info/1136/8374.htm)，在保证显示内容一致的情况下，对其中的一些错误、引用导入和增加盲审编译选项等功能做出改进。
+鉴于SJTU研究生院于21年推出了官方的模板（一堆问题）与SJTUThesis在样式上存在差异，而作为一名latex小白，直接在SJTUThesis项目基础上改动为官方给出的样式有些力不从心。
+
+故本项目基于[研究生学位论文写作模版](https://www.gs.sjtu.edu.cn/info/1136/8374.htm)，在保证显示内容（基本？）一致的情况下，对原始latex模板的一些错误和难用之处进行改进和优化。
