@@ -12,9 +12,9 @@
 ## 测试环境
 > 注：使用XeTex 编译
 
-- [ ] Overleaf
+- [x] [Overleaf (get template quickly)]()
 
-- [ ] LatexSJTU
+- [x] [LatexSJTU](https://latex.sjtu.edu.cn/)
 
 - [x] MacOS (Vscode + MacTex)， 编译pipeline: xelatex -> **biber** -> xelatex -> xelatex
 <details>
