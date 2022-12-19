@@ -16,10 +16,13 @@
 \usepackage{mathptmx}
 \usepackage{fancyhdr} %页眉页脚
 \usepackage[backend=biber, style=gb7714-2015]{biblatex}
+\usepackage{bicaption}
 % 文献表条目间的间距
 \setlength{\bibitemsep}{0pt}
 % 导入参考文献数据库
 \addbibresource{main.bib}
+
+
 
 
 \pagestyle{fancy}
@@ -31,8 +34,14 @@
     circle (.5em) node {\makebox[1em][c]{\small #1}};}}
 \usepackage{hyperref}  %目录
 \hypersetup{colorlinks=true,linkcolor=black}
+\captionsetup[figure][bi-second]{name=Figure} %设置图的英文编号前缀
+\captionsetup[table][bi-second]{name=Table} %设置表的英文编号前缀
+\numberwithin{equation}{section}%公式按章节编号
+\numberwithin{figure}{section}%图表按章节编号
+\numberwithin{table}{section}
 \renewcommand {\thefigure} {\thesection{}-\arabic{figure}}%设定图片的编号。这样设置的实现效果为图1-1
 \renewcommand {\thetable} {\thesection{}-\arabic{figure}}
+\usepackage[justification=centering]{caption} %保持居中，防止标题过长导致左对齐
 \usepackage{caption}
 \captionsetup{font={small},labelsep=quad}%文字5号，之间空一个汉字符位。
 \captionsetup[table]{font={bf}} %表格表号与表题加粗
