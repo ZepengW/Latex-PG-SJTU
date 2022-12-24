@@ -12,7 +12,7 @@
 ## 测试环境
 > 注：使用XeTex 编译
 
-- [x] [Overleaf (get template quickly)]()
+- [x] [Overleaf (get template quickly)](https://www.overleaf.com/latex/templates/latex-pg-sjtu/gxhnkrqrywsp)
 
 - [x] [LatexSJTU](https://latex.sjtu.edu.cn/)
 
