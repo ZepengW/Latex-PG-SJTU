@@ -16,7 +16,8 @@
 
 - [x] [LatexSJTU](https://latex.sjtu.edu.cn/)
 
-- [x] MacOS (Vscode + MacTex)， 编译pipeline: xelatex -> **biber** -> xelatex -> xelatex
+- [ ] MacOS (Vscode + MacTex)【存在问题】， 编译pipeline: xelatex -> **biber** -> xelatex -> xelatex
+【待解决】对编译的pdf复制章节标题，为乱码
 <details>
 <summary>vscode 配置文件</summary>
 
